@@ -1,5 +1,5 @@
 # Netflix-Project
-I make a netflix project for my resume
+I make a netflix project for my resume and only for education purpose 
 
 Built a Netflix-inspired responsive web app with HTML, CSS, and JavaScript.
 
