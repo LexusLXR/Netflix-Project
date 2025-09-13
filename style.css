@@ -44,6 +44,37 @@ nav img {
 nav button {
     position: relative;
     z-index: 1;
+    margin-top: 25px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 2px 18px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 4px;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #94050c;
+}
+
+nav select {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    background: url(Assets/images/language.svg) no-repeat 8px center;
+    background-size: 20px;
+    padding: 2px 35px;
+    font-size: 14px;
+    border: 1px solid #ffffff73;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+
+}
+
+option {
+    color: black;
 }
 
 .hero {
@@ -85,27 +116,22 @@ nav button {
 }
 
 .btn {
-    padding: 3px 8px;
-    font-weight: 400;
+    background-color: #e50914;
     color: white;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 4px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-
-.btn-red {
-    background-color: red;
-    color: white;
-    padding: 3px 24px;
+    border: none;
+    padding: 3px 20px;
     font-size: 20px;
+    font-weight: 900;
+    gap: 10px;
     border-radius: 4px;
-    font-weight: 400;
-}
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.btn-red-sm {
-    background-color: red;
-    color: white;
+}
+.btn:hover{
+    background-color: #94050c;
 }
 
 .hero-buttons {
@@ -186,7 +212,7 @@ section.first>div {
     background-color: #2d2d2d;
     padding: 24px;
     max-width: 60vw;
-    margin: 34px auto;
+    margin: 5px auto;
     cursor: pointer;
 }
 
@@ -251,9 +277,10 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
-        
+
     }
-    .footer-item{
+
+    .footer-item {
         align-items: center;
     }
 
@@ -277,13 +304,64 @@ footer {
         justify-content: center;
         gap: 15px;
     }
-    .hero{
+
+    .hero {
         height: 80%;
     }
-    .faq h2{
+
+    .faq h2 {
         font-size: 32px;
     }
-    footer{
+
+    footer {
         max-width: 90vw;
+    }
+}
+
+
+@media screen and (max-width: 533px) {
+
+    /* body{
+        background-color: red;
+    } */
+    nav {
+        max-width: 100vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 205px;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Video will add later */
+    /* .secImg video{
+    width: 305px;
+    } */
+
+    .hero> :first-child {
+        font-size: 16px;
+
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 9px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 9px;
+    }
+
+
+    .hero {
+        height: 60%;
+    }
+
+    .faq h2 {
+        font-size: 16px;
     }
 }
